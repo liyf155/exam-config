@@ -1,0 +1,29 @@
+# OAuth2 配置
+security:
+  oauth2:
+    client:
+      client-id: ENC(7mJLvcXeXhvZ1qrGHmm9Vw==)
+      client-secret: ENC(uz+RcK1jZpfaqkqwGz/6YA==)
+      scope: server
+
+
+
+# 数据源
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/exam_train?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+
+# 直接放行URL
+ignore:
+  urls:
+#    - /task/**
+
+# 日志级别
+logging:
+  level:
+    com.sinotn.exam.node: DEBUG
+
