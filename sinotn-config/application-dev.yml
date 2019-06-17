@@ -10,11 +10,11 @@ spring:
     default-property-inclusion: non_null
   redis:
     remote: false        #cachecloud 获取
-    host: ${REDIS_HOST:localhost}
+    host: ${REDIS_HOST:10.0.0.100}
     port: ${REDIS_PORT:6379}
     password: 123456
   rabbitmq:
-    host: ${RABBIT_MQ_HOST:localhost}
+    host: ${RABBIT_MQ_HOST:10.0.0.100}
     port:  ${RABBIT_MQ_PORT:5672}
     username: guest
     password: guest
