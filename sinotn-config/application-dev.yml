@@ -12,7 +12,7 @@ spring:
     remote: false        #cachecloud 获取
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:6379}
-    password:
+    password: 123456
   rabbitmq:
     host: ${RABBIT_MQ_HOST:localhost}
     port:  ${RABBIT_MQ_PORT:5672}
